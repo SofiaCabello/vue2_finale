@@ -12,6 +12,12 @@ const routes = [
     component: () => import('@/views/login/') 
   },
   {
+    path: '/article/:articleId',
+    name: 'article',
+    component: () => import('@/views/article/'),
+    props: true
+  },
+  {
     path: '/',
     redirect: '/home',
     component: () => import('@/views/layout/'),

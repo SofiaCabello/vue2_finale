@@ -2,7 +2,7 @@
     <div class="layout-container">
     <router-view/>
     
-    <van-tabbar route>
+    <van-tabbar route active-color="#39c5bb">
         <van-tabbar-item icon="home-o" replace to="/home">首页</van-tabbar-item>
         <van-tabbar-item icon="fire-o" replace to="/trends">热点</van-tabbar-item>
         <van-tabbar-item icon="location-o" replace to="/weather">天气</van-tabbar-item>
@@ -29,4 +29,5 @@ export default {
 }
 </script>
 
-<style lang="less"></style>
+<style lang="less">
+</style>

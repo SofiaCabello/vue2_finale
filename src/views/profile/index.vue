@@ -42,8 +42,8 @@
       <div class="text"> 登录 / 注册</div>
     </div>
     <van-grid :column-num="2">
-      <van-grid-item icon="star-o" text="收藏" />
-      <van-grid-item icon="underway-o" text="历史" />
+      <van-grid-item icon="star-o" text="收藏" @click="$router.push('/usercollect')"/>
+      <van-grid-item icon="underway-o" text="历史" @click="$router.push('/userhistory')" />
     </van-grid>
 
     <van-cell title="自定义接口1" is-link to="" />

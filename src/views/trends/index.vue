@@ -1,5 +1,7 @@
 <template>
-    <div class="trends-container">热点</div>
+    <div class="trends-container">
+      <van-nav-bar title="热点" class="app-nav-bar" />
+    </div>
 </template>
 
 <script>

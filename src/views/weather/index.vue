@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <van-nav-bar class="app-nav-bar" title="天气" />
     <!-- 顶部卡片 -->
     <div class="weather-top-cotainer">
       <div>

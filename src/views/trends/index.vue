@@ -1,7 +1,7 @@
 <template>
   <div class="trends-container">
     <van-nav-bar title="热点" class="app-nav-bar" />
-    <van-cell v-for="(item, index) in hotSearchList" :key="item.id">
+    <van-cell v-for="(item, index) in hotSearchList" :key="item.id" @click="goToDetail(item.id)">
       <span class="hot-number">{{ index + 1 }} </span>
       <span v-html="getHotSearchText(item)"></span>
     </van-cell>
@@ -70,7 +70,9 @@ export default {
            '</svg>';
   },
   },
-
+  goToDetail(id) {
+    this.$router.push({ name: 'trendsDetail', params: { id } });
+  },
 };
 </script>
 

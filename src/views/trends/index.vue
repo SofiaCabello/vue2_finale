@@ -69,9 +69,9 @@ export default {
            '<rect x="14" y="0" width="3" height="10" style="fill: blue; animation: bar3 1s infinite alternate;"></rect>' +
            '</svg>';
   },
-  },
   goToDetail(id) {
     this.$router.push({ name: 'trendsDetail', params: { id } });
+  },
   },
 };
 </script>

@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       hotSearchList: [
-      { id: 1, keyword: '美众议长庆祝特朗普赢得党内首场初选', count: '1243434' },
+        { id: 1, keyword: '美众议长庆祝特朗普赢得党内首场初选', count: '1243434' },
         { id: 2, keyword: '伊朗向伊叙境内目标发射导弹', count: '1200114' },
         { id: 3, keyword: '冷冰雪如何撬动热经济', count: '1083024' },
         { id: 4, keyword: '美国大选首战 特朗普党内遥遥领先', count: '632945' },
@@ -36,7 +36,6 @@ export default {
         { id: 18, keyword: '路面结冰一家三口摔得整整齐齐', count: '281082' },
         { id: 19, keyword: '女子撞死外婆 家属谅解或可免刑罚', count: '279304' },
         { id: 20, keyword: '游本昌为了好剧本卖房', count: '259304' },
-        { id: 21, keyword: 'MongoDB', count: '293063' },
       ],
     };
   },
@@ -46,7 +45,7 @@ export default {
   mounted() {},
   methods: {
   addRandomText() {
-    const randomNumber = Math.floor(Math.random() * 15);
+    const randomNumber = Math.floor(Math.random() * 10);
 
     switch (randomNumber) {
       case 5:

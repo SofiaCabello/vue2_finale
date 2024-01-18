@@ -10,7 +10,7 @@ const routes = [
     name: 'login',
     // 懒加载
     component: () => import('@/views/login/') 
-  },
+  },  
   {
     path: '/usercollect',
     name: 'usercollect',
@@ -26,6 +26,12 @@ const routes = [
     name: 'article',
     component: () => import('@/views/article/'),
     props: true
+  },
+  {
+    path: '/trends/:id',
+    name: 'trendsDetail',
+    component: () => import('@/views/trends/trendsDetail/index.vue'),  // 修改这里的路径
+    props: true,
   },
   {
     path: '/',

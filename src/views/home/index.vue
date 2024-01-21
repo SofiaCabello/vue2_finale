@@ -8,15 +8,15 @@
       @search="onSearch"
       @cancel="onCancel" />
 
-      <van-tabs v-model="active" color="#39c5bb">
-        <van-tab
-          v-for="item in channels"
-          :key="item.index"
-          :title="item.name"
-        >
-        <ArticleList :channel="item"/>
-      </van-tab>
-      </van-tabs>
+    <van-tabs v-model="active" color="#39c5bb">
+      <van-tab
+        v-for="item in channels"
+        :key="item.index"
+        :title="item.name"
+      >
+      <ArticleList :channel="item"/>
+    </van-tab>
+    </van-tabs>
   </div>
 </template>
 
@@ -60,7 +60,10 @@ export default {
   mounted() {},
   methods: {
     onSearch(value) {
-      console.log(value);
+      this.$router.push({
+        path: '/search',
+
+      })
     },
     onCancel() {
       console.log('cancel');

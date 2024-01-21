@@ -28,6 +28,11 @@ const routes = [
     props: true
   },
   {
+    path: '/search',
+    name: 'search',
+    component: () => import('@/views/search/'),
+  },
+  {
     path: '/trends/:id',
     name: 'trendsDetail',
     component: () => import('@/views/trends/trendsDetail/index.vue'),  // 修改这里的路径

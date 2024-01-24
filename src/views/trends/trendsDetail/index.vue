@@ -7,15 +7,19 @@
     </div>
 
     <!-- 评论按钮 -->
-    <div class="comment-button-wrapper">
+    <div class="bottom-content">
       <van-button
-        type="primary"
+      class="comment-btn" 
+      type="default" 
+      round size="small"
         @click="showCommentInput = true"
-        round
-        block
       >
-        发表评论
+        写评论
       </van-button>
+      <van-icon name="comment-o" info="10" color="#777" />
+      <van-icon color="#777" name="star-o" />
+      <van-icon color="#777" name="good-job-o" />
+      <van-icon color="#777" name="share" />
     </div>
 
     <!-- 评论弹窗 -->
@@ -29,12 +33,12 @@
       />
       
       <!-- 提交按钮 -->
-      <div class="submit-button-wrapper">
+      <div class="bottom-content">
         <van-button
-          type="primary"
+        class="comment-btn" 
+        type="default" 
+      round size="small"
           @click="submitComment"
-          round
-          block
         >
           提交
         </van-button>
@@ -189,4 +193,23 @@ export default {
   right: 0;
   padding: 10px;
 }
+
+.bottom-content {
+  position: fixed;
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background-color: white;
+}
+.comment-btn {
+    width: 141px;
+    height: 23px;
+    font-size: 15px;
+}
+
 </style>
